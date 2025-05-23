@@ -1,0 +1,192 @@
+
+/* paleta de cores:    https://paletadecores.com/paleta/f8a834/c97e27/9a541a/6b2a0d/3c0000/ */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Header---------------------------------- */
+
+header{
+    background-color: #e65100;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    
+    height: 5rem;
+    
+}
+
+.lista-header ul{
+    justify-content: right;
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+.lista-header ul li{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburguer{
+    display: none;
+}
+
+
+/*DIVS UNIVERSAL-------------------------------------------- */
+
+.universal {
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.universal div {
+   
+    width: 30rem;
+    height: 20rem;
+    margin: 10px;
+    min-width: 299px;
+}
+
+/*SESSÃO 1 ------------------------------------------------- */
+
+.sessao1 {
+    background-color: #f2e8c4; 
+    
+}
+
+.div1 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.div2 img {
+    width: 20rem;
+    border-radius: 10px;
+}
+
+/*SESSAO 2 ------------------------------------------ */
+.div-sessao2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sessao2 {
+    background-image: url(imagens/logo\ Fundo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sessao2 button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15rem;
+    background-color: #05050579;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------*/
+
+
+
+
+
+/*BOTÃO WHATSAPP*/
+
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+
+
+    
+    @media (max-width: 768px) {
+    .hamburguer {
+        display: flex;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    
+
+    }
+    
+    .lista-header{
+        display: none;
+    }
+
+
+    .universal {
+        flex-direction: column;
+        padding: 4rem 2rem;
+        align-items: center;
+    }
+
+    .universal div {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .sessao2 button {
+        width: 100%;
+        max-width: 15rem;
+    }
+}
